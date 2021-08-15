@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Articule
+{% endblock %}
+
+{% block body %}
+
+<div class="container mt-5">
+    <h1 class="text">Fake or real news</h1>
+<form method="post" >
+    <textarea class="event" name="text"  id="text" class="form-control" placeholder="Introdu textul"></textarea><br>
+     <input type="submit" class="btn btn-succes" value="Verifica">
+</form>
+    <h1>{{request.args.get('data')}}</h1>
+</div>
+{% endblock %}
